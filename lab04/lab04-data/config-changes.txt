@@ -1,0 +1,9 @@
+--- lab04-data/config-old.txt	2026-09-28 10:29:08.962699364 +0000
++++ lab04-data/config-new.txt	2026-09-28 10:29:08.962699364 +0000
+@@ -1,4 +1,4 @@
+ server=web01
+-port=80
++port=443
+ logging=enabled
+-timeout=30
++timeout=60

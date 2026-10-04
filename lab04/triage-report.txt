@@ -1,0 +1,44 @@
+File Triage Report 
+Total Files:
+Total Files:
+25
+Total Directories:
+10
+Python Files:
+./lab04-data/scripts/report.py
+./lab04-data/scripts/scan.py
+Shell Scripts:
+./lab04-data/scripts/check.sh
+Log Files:
+./lab04-data/logs/firewall.log
+./lab04-data/logs/auth.log
+./lab04-data/logs/access.log
+./lab04-data/nested/archive/old.log
+Configuration Files:
+./lab04-data/configs/app.conf
+./lab04-data/configs/server.conf
+./lab04-data/configs/backup.conf
+Empty Files:
+./lab04-data/evidence/empty.bin
+Archives:
+./lab04-data/evidence/archive.zip
+Files Containing admin:
+lab04-data/logs/auth.log
+lab04-data/logs/access.log
+lab04-data/backups/users.old
+lab04-data/evidence/notes.txt
+triage-report.txt
+Files Containing admin:
+./lab04-data/logs/auth.log
+./lab04-data/logs/access.log
+./lab04-data/backups/users.old
+./lab04-data/evidence/notes.txt
+./triage-report.txt
+Detected File Types in Evidence:
+lab04-data/evidence/suspicious.dat: ELF, unknown class 154
+lab04-data/evidence/notes.txt:      ASCII text
+lab04-data/evidence/empty.bin:      empty
+lab04-data/evidence/image.png:      PNG image data, 1 x 1, 8-bit/color RGBA, non-interlaced
+lab04-data/evidence/passwords.txt:  ASCII text
+lab04-data/evidence/archive.zip:    Zip archive data, at least v2.0 to extract, compression method=deflate
+lab04-data/evidence/readme.md:      ASCII text

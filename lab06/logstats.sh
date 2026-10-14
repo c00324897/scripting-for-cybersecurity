@@ -30,4 +30,16 @@ echo "Last line       : $LAST_LINE"
 echo "Longest line    : $LONGEST_LINE characters"
 echo "Failed logins   : $FAILED"
 
+read -p "Enter a keyword to search for (or press Enter to skip): " KEYWORD
+
+if [ -n "$KEYWORD" ]; then
+    MATCH_COUNT=$(grep -c "$KEYWORD" "$LOGFILE")
+	if [ "MATCH_COUNT" -eq 0 ]; then 
+    	echo "No matches found."
+	else 
+	echo "Lines containing '$KEY_WORD': $MATCH_COUNT"
+	fi 
+fi
+
 exit 0
+ 

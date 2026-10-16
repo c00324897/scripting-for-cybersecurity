@@ -1,0 +1,14 @@
+#!/bin/bash
+
+CONF=$1
+TLS=$(grep '^tls=' "$CONF" | cut -d'=' -f2)
+
+if [-z "$TLS" ]; then
+    echo "$CONF: no debug setting"
+elif [ "$TLS" = "true" ]; then
+    echo "$CONF: WARNING - tls is ON"
+elif [ "$TLS" = "false" ]; then
+    echo "$CONF: WARNING - tls mode is Off"
+else
+     echo "$CONF: unexpected debug value '$DEBUG'"
+fi

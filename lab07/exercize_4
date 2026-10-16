@@ -1,0 +1,10 @@
+#!/bin/bash
+
+LOG="case/logs/access.log"
+
+grep -q "sqlmap" "$LOG" 
+if [ $? -eq 0 ]; then
+    echo "Scanning tool activity detected"
+else
+    echo "No scanning tool activity"
+fi 
